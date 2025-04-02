@@ -31,8 +31,8 @@ export default function RoadmapPage() {
             <div className="bg-white p-4 rounded-lg shadow-md mb-8">
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                 <Image 
-                  src="/images/mvp_roadmap.png" 
-                  alt="MVP Roadmap" 
+                  alt="MVP Roadmap"
+                  src="images/mvp_roadmap.png"
                   fill
                   className="object-contain"
                 />
@@ -91,8 +91,8 @@ export default function RoadmapPage() {
             <div className="bg-white p-4 rounded-lg shadow-md mb-8">
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                 <Image 
-                  src="/images/full_scope_roadmap.png" 
-                  alt="Full Scope Roadmap" 
+                  alt="Full Scope Roadmap"
+                  src="images/full_scope_roadmap.png"
                   fill
                   className="object-contain"
                 />

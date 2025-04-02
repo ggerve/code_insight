@@ -44,28 +44,30 @@ export default function ArchitecturePage() {
               <h3 className="text-xl font-bold mb-4">High-Level Architecture Diagram</h3>
               <div className="p-4 bg-slate-100 rounded-lg mb-4 overflow-x-auto">
                 <pre className="text-sm">
-{`+------------------------------------------+
+{`
++------------------------------------------+
 |                                          |
 |              Web Frontend                |
 |     (Next.js + Tailwind + React Flow)    |
 |                                          |
-+------------------+---------------------+
-                   |
-                   v
-+------------------+---------------------+
-|                                        |
-|              API Backend               |
-|           (Node.js/Express)            |
-|                                        |
-+--+---------------+---------------+-----+
-   |               |               |
-   v               v               v
-+--+-----+    +----+----+    +----+----+
-|        |    |         |    |         |
-| GitHub |    |   LLM   |    | Storage |
-|  API   |    |  Service |    | Service |
-|        |    |         |    |         |
-+--------+    +---------+    +---------+`}
++--------------------+---------------------+
+                     |
+                     v
++--------------------+---------------------+
+|                                          |
+|               API Backend                |
+|        (Python or Node.js/Express)       |
+|                                          |
++----+---------------+---------------+-----+
+   |                 |               |
+   v                 v               v
++----+----+     +----+----+     +----+----+
+|         |     |         |     |         |
+|  GitHub |     |   LLM   |     | Storage |
+|   API   |     | Service |     | Service |
+|         |     |         |     |         |
++---------+     +---------+     +---------+`
+}
                 </pre>
               </div>
             </div>
@@ -86,7 +88,7 @@ export default function ArchitecturePage() {
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-4">2. API Backend</h3>
-                <p className="mb-3"><strong>Technology:</strong> Node.js with Express</p>
+                <p className="mb-3"><strong>Technology:</strong> Python or Node.js with Express</p>
                 <p className="mb-3"><strong>Key Components:</strong></p>
                 <ul className="list-disc pl-6 space-y-2 mb-3">
                   <li><strong>Authentication Service:</strong> Handles user login/registration</li>
@@ -184,49 +186,50 @@ export default function ArchitecturePage() {
               <h3 className="text-xl font-bold mb-4">High-Level Architecture Diagram</h3>
               <div className="p-4 bg-slate-100 rounded-lg mb-4 overflow-x-auto">
                 <pre className="text-sm">
-{`+--------------------------------------------------------------+
-|                                                              |
-|                        Web Frontend                          |
-|  (Next.js + Tailwind + Advanced Visualization Libraries)     |
-|                                                              |
-+-------------------------------+------------------------------+
-                               |
-                               v
-+-------------------------------+------------------------------+
-|                                                              |
-|                      API Gateway                             |
-|                  (Node.js/Express/Fastify)                   |
-|                                                              |
-+-----+----------------+----------------+----------------+-----+
-      |                |                |                |
-      v                v                v                v
-+-----+-----+    +-----+------+   +-----+------+   +----+-----+
-|           |    |            |   |            |   |          |
-|   Auth    |    | Repository |   |  Analysis  |   |   HITL   |
-| Microservice   | Microservice   | Microservice   | Microservice
-|           |    |            |   |            |   |          |
-+-----+-----+    +-----+------+   +-----+------+   +----+-----+
-      |                |                |                |
-      v                v                v                v
-+-----+-----+    +-----+------+   +-----+------+   +----+-----+
-|           |    |            |   |            |   |          |
-|  User DB  |    | Code Store |   | Vector DB  |   | Chat DB  |
-|           |    |            |   |            |   |          |
-+-----------+    +------------+   +------------+   +----------+
-                                        |
-                                        v
-                              +---------+---------+
-                              |                   |
-                              |   Agent System    |
-                              |                   |
-                              +---+-----+-----+---+
-                                  |     |     |
-                                  v     v     v
-                              +---+--+--+--+--+---+
-                              |                   |
-                              | External Services |
-                              |                   |
-                              +-------------------+`}
+{`
++--------------------------------------------------------------------+
+|                                                                    |
+|                            Web Frontend                            |
+|      (Next.js + Tailwind + Advanced Visualization Libraries)       |
+|                                                                    |
++----------------------------------+---------------------------------+
+                                   |
+                                   v
++----------------------------------+---------------------------------+
+|                                                                    |
+|                             API Gateway                            |
+|                                                                    |
++------+------------------+-----------------+-----------------+------+
+       |                  |                 |                 |
+       v                  v                 v                 v
++------+------+    +------+------+   +------+------+   +------+------+
+|             |    |             |   |             |   |             |
+|   Auth      |    | Repository  |   |  Analysis   |   |     HITL    |
+| Microservice|    | Microservice|   | Microservice|   | Microservice|
+|             |    |             |   |             |   |             |
++------+------+    +------+------+   +------+------+   +------+------+
+       |                  |                 |                 |
+       v                  v                 v                 v
++------+------+    +------+------+   +------+------+   +------+------+
+|             |    |             |   |             |   |             |
+|   User DB   |    |  Code Store |   |  Vector DB  |   |   Chat DB   |
+|             |    |             |   |             |   |             |
++-------------+    +-------------+   +-------------+   +-------------+
+       |                  |                 |                 | 
+       v                  v                 v                 v
++----------------------------------+---------------------------------+
+|                                                                    |
+|                             Agent System                           |
+|                                                                    |
++------+------------------+-----------------+-----------------+------+
+       |                  |                 |                 |
+       v                  v                 v                 v
++----------------------------------+---------------------------------+
+|                                                                    |
+|                          External Services                         |
+|                                                                    |
++----------------------------------+---------------------------------+
+`}
                 </pre>
               </div>
             </div>

@@ -189,8 +189,8 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">MVP Roadmap (2-Day Hackathon)</h3>
               <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
                 <Image 
-                  src="/images/mvp_roadmap.png" 
-                  alt="MVP Roadmap" 
+                  alt="MVP Roadmap"
+                  src="images/mvp_roadmap.png"
                   fill
                   className="object-contain"
                 />
@@ -206,8 +206,8 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Full Scope Roadmap</h3>
               <div className="relative aspect-video mb-4 overflow-hidden rounded-lg">
                 <Image 
-                  src="/images/full_scope_roadmap.png" 
-                  alt="Full Scope Roadmap" 
+                  alt="Full Scope Roadmap"
+                  src="images/full_scope_roadmap.png"
                   fill
                   className="object-contain"
                 />
